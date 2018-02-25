@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "shabnam";
+  src:url('Shabnam-Light.woff2');
+  src:url('Shabnam-Light.woff');
+  src:url('Shabnam-Light.eot');
+  src:url('Shabnam-Light.ttf');
+}
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "shabnam", sans-serif;}
+body, html, header {
+  height: 100%;
+  margin: 0;
+}
+a:hover{ 
+  text-decoration: none;
+  size: 10px;
+}
+a{
+  color: darkgrey ;  
+}
+
+.intro {
+  height: 100%;
+}
+
+.bg1 {
+  height: 80%;
+  background-image: url('1.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product {
+  height: 400px;
+  padding-top: 30px;
+  padding-bottom: 120px;
+  box-sizing: border-box;
+}
+
+.newproduct {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.golpic {
+  background-image: url('gol1.jpg');
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.golrow {
+  padding: 0px;
+  margin-top: 20px;
+}
+
+.gol {
+  height: 410px;
+  padding: 0px;
+}
+
+.golmatn {
+  height: 100%;
+  background-color: #373737;
+}
+
+.aboutrow {}
+
+.aboutcol {
+  height: 410px;
+}
+
+.about {
+  /* background-image: url('2.jpg'); */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.aboutheader {
+  text-align: center;
+}
+
+.abouttext {
+  text-align: justify;
+}
+
+.footerrow {
+  background-color: #373737;
+  height: 400px;
+}
+.logofooter{
+  max-height: 200px;
+}
+.adress{
+  color:white;
+}
+
+.spacer{
+  flex: 1 1 auto;
+}
+.navmenu{
+  color: #757575;
+}
+li.container {
+  margin: 0 auto;
+	padding: 10em 3em;
+}
+li.container a{
+  color: rgb(214, 12, 12);
+  text-decoration: none;
+  font: 20px Raleway;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+.container a:before, .container a:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: rgb(85, 2, 2);
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+} 
