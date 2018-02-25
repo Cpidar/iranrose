@@ -22,9 +22,12 @@ a{
 .intro {
   height: 100%;
 }
+.navbar :hover{
+  color: #8BC34A;
+}
 
 .bg1 {
-  height: 80%;
+  height: 400px;
   background-image: url('1.jpg');
   background-attachment: fixed;
   background-position: center;
@@ -37,7 +40,7 @@ a{
 }
 
 .product {
-  height: 400px;
+  height: 500px;
   padding-top: 30px;
   padding-bottom: 120px;
   box-sizing: border-box;
@@ -113,21 +116,17 @@ a{
 .navmenu{
   color: #757575;
 }
-li.container {
-  margin: 0 auto;
-	padding: 10em 3em;
-}
-li.container a{
+
+.navpart{
   color: rgb(214, 12, 12);
   text-decoration: none;
-  font: 20px Raleway;
   margin: 0px 10px;
   padding: 10px 10px;
   position: relative;
   z-index: 0;
   cursor: pointer;
 }
-.container a:before, .container a:after {
+.navpart:before, .navpart:after {
   position: absolute;
   left: 0px;
   width: 100%;
@@ -137,3 +136,17 @@ li.container a{
   opacity: 0;
   transition: all 0.3s;
 } 
+.navpart:before{
+  top: 0px;
+  transform: translateY(10px);
+}
+.navpart:after{
+  bottom: 0px;
+  transform: translateY(-10px);
+}
+.navpart:hover:before, .navpart:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
